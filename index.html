@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>첫 번째 과제</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+
+    <!-- Edit / remove 모달창-->
+
+    <div class="modal">
+        <ul>
+            <li><a href="#">Edit</a></li>
+            <li><a href="#" class="remove">Remove</a></li>
+        </ul>
+    </div>
+    
+    <table>
+
+        <!--게시판 헤더-->
+        
+        <thead>
+            <tr>
+                <th></th>
+                <th>Ticket ID</th>
+                <th>Status</th>
+                <th>Subject</th>
+                <th>Queue</th>
+                <th>Client</th>
+                <th>Owner</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            
+             <!-- 첫 번째 list-->
+
+            <tr>
+                <td>
+                    <input type="checkbox" checked>
+                    <label class="odd_num" for="checkbox1"></label>
+                </td>
+                <td>10004</td>
+                <td class="center">
+                    <div class="open">open</div>
+                </td>
+                <td>Need help with software installation</td>
+                <td>Jerrodbury</td>
+                <td class="blue">Adam Briggs</td>
+                <td class="blue">Jane Patrick</td>
+                <td>
+                    <button>
+                        <img src="img/dots_three.png" alt="button">
+                    </button>
+                </td>
+            </tr>
+
+            <!-- 두 번째 list-->  
+
+            <tr>
+                <td>
+                    <input type="checkbox" checked>
+                    <label class="even" for="checkbox2"></label>
+                </td>
+                <td>10004</td>
+                <td>Closed</td>
+                <td>Need help with software installation</td>
+                <td>Lake Zolia</td>
+                <td class="blue">Erik Beck</td>
+                <td class="blue">Windred Byrns</td>
+                <td>
+                    <button>
+                        <img src="img/dots_three.png" alt="button">
+                    </button>
+                </td>
+            </tr>
+
+            <!-- 세 번째 list--> 
+
+            <tr>
+                <td>
+                    <input type="checkbox" checked>
+                    <label class="odd_num" for="checkbox3"></label>
+                </td>
+                <td>10004</td>
+                <td class="center">
+                    <div class="open">open</div>
+                </td>
+                <td>Need help with software installation</td>
+                <td>Second Level</td>
+                <td class="blue">Marcus Gamez</td>
+                <td class="blue">lida Rios</td>
+                <td>
+                    <button>
+                        <img src="img/dots_three.png" alt="button">
+                    </button>
+                </td>
+            </tr>
+
+            <!-- 네 번째 list--> 
+
+            <tr>
+                <td>
+                    <input type="checkbox" checked>
+                    <label class="even" for="checkbox4"></label>
+                </td>
+                <td>10004</td>
+                <td>Closed</td>
+                <td>Not working console</td>
+                <td>Eugenriafurt</td>
+                <td class="blue">isasah Hawkins</td>
+                <td class="blue">Esther Vasquez</td>
+                <td>
+                    <button>
+                        <img src="img/dots_three.png" alt="button">
+                    </button>
+                </td>
+            </tr>
+
+            <!-- 다섯 번째 list--> 
+
+            <tr>
+                <td>
+                    <input type="checkbox" checked>
+                    <label class="odd_num" for="checkbox5"></label>
+                </td>
+                <td>10004</td>
+                <td class="center">
+                    <div class="open">open</div>
+                </td>
+                <td>Need to update. Help me</td>
+                <td>Second Level</td>
+                <td class="blue">Alfred Coleman</td>
+                <td class="blue">Estella Powers</td>
+                <td>
+                    <button>
+                        <img src="img/dots_three.png" alt="button">
+                    </button>
+                </td>
+            </tr>
+
+            <!-- 여섯 번째 list--> 
+
+            <tr>
+                <td>
+                    <input type="checkbox" checked>
+                    <label class="even" for="checkbox6"></label>
+                </td>
+                <td>10004</td>
+                <td>Closed</td>
+                <td>Software not working</td>
+                <td>Donavonton</td>
+                <td class="blue">Theodore Lawsan</td>
+                <td class="blue">Sarah Sanchez</td>
+                <td>
+                    <button>
+                        <img src="img/dots_three.png" alt="button">
+                    </button>
+                </td>
+            </tr>
+
+            <!-- 일곱 번째 list--> 
+
+            <tr>
+                <td>
+                    <input type="checkbox" checked>
+                    <label class="odd_num" for="checkbox7"></label>
+                </td>
+                <td>10004</td>
+                <td class="center">
+                    <div class="reopen">Reopened</div>
+                </td>
+                <td>Need help with software installation</td>
+                <td>Second Level</td>
+                <td class="blue">Curtis Rodriquez</td>
+                <td class="blue">Nina Wong</td>
+                <td>
+                    <button>
+                        <img src="img/dots_three.png" alt="button">
+                    </button>
+                </td>
+            </tr>
+
+            <!-- 여덟 번째 list--> 
+
+            <tr>
+                <td>
+                    <input type="checkbox" checked>
+                    <label class="even" for="checkbox8"></label>
+                </td>
+                <td>10004</td>
+                <td>Closed</td>
+                <td>Need help with software installation</td>
+                <td>Second Level</td>
+                <td class="blue">Leo Conner</td>
+                <td class="blue">Maitie Powell</td>
+                <td>
+                    <button>
+                        <img src="img/dots_three.png" alt="button">
+                    </button>
+                </td>
+            </tr>
+
+            <!-- 아홉 번째 list--> 
+
+            <tr>
+                <td>
+                    <input type="checkbox" checked>
+                    <label class="odd_num" for="checkbox9"></label>
+                </td>
+                <td>10004</td>
+                <td class="center">
+                    <div class="open">open</div>
+                </td>
+                <td>Need help with software installation</td>
+                <td>West Tirvwnothy</td>
+                <td class="blue">Coneor Weich</td>
+                <td class="blue">Louei Barreft</td>
+                <td>
+                    <button>
+                        <img src="img/dots_three.png" alt="button">
+                    </button>
+                </td>
+            </tr>
+
+            <!-- 열 번째 list--> 
+
+            <tr>
+                <td class="even">
+                    <input type="checkbox" checked>
+                    <label class="even" for="checkbox10"></label>
+                </td>
+                <td>10004</td>
+                <td>Closed</td>
+                <td>Not working console</td>
+                <td>South Emmet</td>
+                <td class="blue">Corey Battan</td>
+                <td class="blue">Rhodia Banes</td>
+                <td>
+                    <button>
+                        <img src="img/dots_three.png" alt="button">
+                    </button>
+                </td>
+            </tr>
+
+            <!-- 열 한 번째 list--> 
+
+            <tr>
+                <td class="odd_number">
+                    <input type="checkbox" checked>
+                    <label class="odd_num" for="checkbox11"></label>
+                </td>
+                <td>10004</td>
+                <td class="center">
+                    <div class="open">open</div>
+                </td>
+                <td>Need to update. Help me</td>
+                <td>Second Level</td>
+                <td class="blue">Don Medina</td>
+                <td class="blue">Bernice Bass</td>
+                <td>
+                    <button>
+                        <img src="img/dots_three.png" alt="button">
+                    </button>
+                </td>
+            </tr>
+
+            <!-- 열 두 번째 list--> 
+
+            <tr>
+                <td class="even">
+                    <input type="checkbox" checked>
+                    <label class="even" for="checkbox12"></label>
+                </td>
+                <td>10004</td>
+                <td>Closed</td>
+                <td>Software not working</td>
+                <td>kingview</td>
+                <td class="blue">Luns Thgmpsort</td>
+                <td class="blue">LsAa Wamer</td>
+                <td>
+                    <button>
+                        <img src="img/dots_three.png" alt="button">
+                    </button>
+                </td>
+            </tr>
+      </tbody>
+    </table>
+</body>
+</html>
