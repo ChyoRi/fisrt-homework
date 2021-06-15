@@ -3,6 +3,7 @@ var SELECT = 0;
 
 $(function(){
 
+    
     $('button').click(function(){
         var i = $(this).parents('tr').index();
         SELECT = i;

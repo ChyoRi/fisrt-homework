@@ -22,6 +22,10 @@ body{
     position: relative;
 }
 
+button{
+    background-color: transparent;
+}
+
 .modal{
     display: none;
     position: fixed;
@@ -44,6 +48,14 @@ table{
     text-align: center;
 }
 
+table tr:nth-child(odd){
+    background-color: #f8f8f8;
+}
+
+table tr:nth-child(even){
+    background-color: #fff;
+}
+
 
 /* 기존의 CheakBox Style 제거 */
 
@@ -56,12 +68,12 @@ input[type="checkbox"]{
 
 input[type="checkbox"] + label::before{
     content: '\a0';
-    display: inline-block;
+    display: block;
     width: 1em;
     height: 1em;
     color: #fff;
     background-color: #fff;
-    margin: 0.1em;
+    border: 1px solid #ccc;
 }
 
 /* 체크 후 상태 Style */
@@ -85,23 +97,49 @@ table > tbody > tr > .center{
     width: 100%;
     height: 100%;
 }
+
 table > tbody > tr > td {
     position: relative;
 }
-table > tbody > tr > td > .open{
+
+.open::before{
+    content: 'open';
+    display: block;
     width: 75px;
     height: 30px;
-    border-radius: 20% / 50%;
-    background-color: #f09e33;
+    border-radius: 1000000000000px;
     color: #fff;
+    background-color: #f09e33;
 }
 
-table > tbody > tr > td > .reopen{
-    width: 95px;
+.closed::before{
+    content: 'Closed';
+    display: block;
+    width: 75px;
     height: 30px;
-    border-radius: 20% / 50%;
-    background-color: #5cbb5c;
+    border-radius: 1000000000000px;
+    color: #000;
+    background-color: #fff;
+}
+
+.closed::before{
+    content: 'Closed';
+    display: block;
+    width: 75px;
+    height: 30px;
+    border-radius: 1000000000000px;
+    color: #000;
+    background-color: #fff;
+}
+
+.reopened::before{
+    content: 'Reopened';
+    display: block;
+    width: 90px;
+    height: 30px;
+    border-radius: 1000000000000px;
     color: #fff;
+    background-color: #5cbb5c;
 }
 
 table > tbody > tr > .blue{
@@ -110,4 +148,12 @@ table > tbody > tr > .blue{
 
 table > tbody > tr > td > button{
     cursor: pointer;
+}
+
+table > tbody > tr > td > button div{
+    width: 5px;
+    height: 5px;
+    margin: 5px 5PX;
+    background-color: #000;
+    border-radius: 50%;
 }
